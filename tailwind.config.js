@@ -3,10 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          400: '#996DFF',
-          500: '#8257E5'
-        },
+        'brand': '#8257E5',
+        'brand-hover': '#996DFF',
         text: {
           400: '#f4f4f5',
           500: '#a1a1aa'
@@ -19,7 +17,11 @@ module.exports = {
         stroke: {
 
         },
-        dark: '#09090A'
+        background: '#09090A'
+      },
+      boxShadow: {
+        'brand-bx': '0px 8px 24px rgba(130, 87, 229, 0.25)',
+        'surface-bx': '0px 8px 32px rgba(0, 0, 0, 0.15)',
       }
     },
   },
