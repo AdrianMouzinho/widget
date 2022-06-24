@@ -17,10 +17,10 @@ export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProp
                 { Object.entries(feedbackTypes).map(([key, value]) => {
                     return (
                         <button
-                        key={key}
-                        className="bg-surface-400 rounded-lg w-24 h-28 flex-1 flex flex-col justify-center items-center gap-2 border-2 border-transparent hover:border-brand focus:border-brand outline-none text-sm"
-                        type="button"
-                        onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
+                            key={key}
+                            className="bg-zinc-800 rounded-lg w-24 h-28 flex-1 flex flex-col justify-center items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 outline-none text-sm"
+                            type="button"
+                            onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
                         >
                             <img src={value.image.src} alt={value.image.alt} />
                             {value.title}
