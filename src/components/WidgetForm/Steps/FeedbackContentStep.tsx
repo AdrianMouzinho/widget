@@ -1,6 +1,8 @@
-import { ArrowLeft, Camera } from "phosphor-react";
+import { ArrowLeft } from "phosphor-react";
 import { FeedbackType, feedbackTypes } from "..";
+
 import { CloseButton } from "../../CloseButton";
+import { ScreenshotButton } from "../ScreenshotButton";
 
 interface FeedbackContentStepProps {
     feedbackType: FeedbackType;
@@ -40,15 +42,11 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested }
                 />
 
                 <div className="flex gap-2">
-                    <button
-                        type="button"
-                        className="p-2 bg-zinc-800 text-zinc-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500"
-                    >
-                        <Camera className="w-6 h-6" />
-                    </button>
+                    <ScreenshotButton />
+
                     <button
                         type="submit"
-                        className="p-2 bg-brand-500 hover:bg-brand-400 text-white border-transparent rounded-md text-sm leading-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 flex-1 transition-colors"
+                        className="p-2 flex-1 bg-brand-500 hover:bg-brand-400 text-white border-transparent rounded-md text-sm leading-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors"
                     >
                         Enviar
                     </button>
