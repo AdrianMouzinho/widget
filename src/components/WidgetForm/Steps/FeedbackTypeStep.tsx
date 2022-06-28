@@ -13,7 +13,7 @@ export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProp
                 <CloseButton />
             </header>
 
-            <div className="flex justify-center gap-2 mt-8 mb-12">
+            <div className="w-full flex justify-center gap-2 mt-8 mb-12">
                 { Object.entries(feedbackTypes).map(([key, value]) => {
                     return (
                         <button
